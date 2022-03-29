@@ -1,0 +1,24 @@
+Root:
+    BoxLayout:
+        orientation:'vertical'
+        canvas.before:
+            Color:
+                rgba:255/255.0, 0/255.0, 0/255.0, 1
+            Rectangle:
+                pos:  self.pos
+                size: self.size
+        Label:
+            id:saludo_label
+            text:'Bienvenido a kivy'
+            color: 1,0,1,1
+        TextInput:
+            id: user_input
+            text: 'testing-1-2-3'   
+        Label:
+            id:enrique_label
+            text:'Hola mundo'
+        Button:
+            text:"btn1"
+            on_release:root.limpiaLabel()
+
+            
